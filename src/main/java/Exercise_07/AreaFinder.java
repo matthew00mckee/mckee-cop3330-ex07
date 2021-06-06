@@ -11,6 +11,7 @@ public class AreaFinder {
     public static void main(String[] args){
         //constant variable
         final double CONVERSION = 0.09290304;
+
         System.out.print("What is the length of the room?");
         Scanner input = new Scanner(System.in);
         String LengthStr = input.next();
@@ -20,6 +21,7 @@ public class AreaFinder {
         String WidthStr = input.next();
         double width = Double.parseDouble(WidthStr);
 
+        //calculations
         double area = length*width;
         double areaMeterss = area*CONVERSION;
 
